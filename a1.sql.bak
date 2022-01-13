@@ -1,0 +1,22 @@
+/*drop procedure if exists pro11;
+delimiter $
+create procedure pro11()
+begin
+
+select "hello";
+
+
+
+end $
+delimiter ;
+  */ 
+
+drop PROCEDURE if exists pro12;
+delimiter $
+create PROCEDURE pro12(in c1 int,in c2 VARCHAR(12),in c3 FLOAT(2,2),in c4 int)
+begin
+select "hello";
+INSERT into emp VALUES(c1,c2,c3,c4);
+
+end $
+delimiter ;
